@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1703430077218,
+  "lastUpdate": 1705713412416,
   "repoUrl": "https://github.com/alcides/GeneticEngine",
   "entries": {
     "Python Benchmark with pytest-benchmark": [
@@ -7689,6 +7689,205 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 5.6919279425658855",
             "extra": "mean: 16.528212319000012 sec\nrounds: 5"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@alcidesfonseca.com",
+            "name": "Alcides Fonseca",
+            "username": "alcides"
+          },
+          "committer": {
+            "email": "me@alcidesfonseca.com",
+            "name": "Alcides Fonseca",
+            "username": "alcides"
+          },
+          "distinct": true,
+          "id": "bffa8ae1d7bcb66b1554c118a437630405e36849",
+          "message": "Fixed bug with mutation and xover",
+          "timestamp": "2024-01-20T01:07:33Z",
+          "tree_id": "34fb9ef96acee84c2c6926dff9b2c715f0deee46",
+          "url": "https://github.com/alcides/GeneticEngine/commit/bffa8ae1d7bcb66b1554c118a437630405e36849"
+        },
+        "date": 1705713411808,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/gp/performance_test.py::test_bench_initialization[full_method]",
+            "value": 17622.072503161344,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000015051756095252695",
+            "extra": "mean: 56.747014281129715 usec\nrounds: 19606"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_initialization[grow_method]",
+            "value": 18194.572519920253,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00001455165089175318",
+            "extra": "mean: 54.96144517301267 usec\nrounds: 21823"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_initialization[pi_grow_method]",
+            "value": 17116.256812551645,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00001755867925587939",
+            "extra": "mean: 58.42398901532507 usec\nrounds: 20847"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_initialization_class[TreeBasedRepresentation-FullInitializer]",
+            "value": 132.04311511413812,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00015126637847606863",
+            "extra": "mean: 7.573283916663128 msec\nrounds: 132"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_initialization_class[TreeBasedRepresentation-GrowInitializer]",
+            "value": 132.80202045270647,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00021652556266387027",
+            "extra": "mean: 7.530005918517788 msec\nrounds: 135"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_initialization_class[TreeBasedRepresentation-PositionIndependentGrowInitializer]",
+            "value": 131.44728475876198,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00016694985100838586",
+            "extra": "mean: 7.6076124496237805 msec\nrounds: 129"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_initialization_class[TreeBasedRepresentation-RampedInitializer]",
+            "value": 129.74026434554423,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00024153117870291118",
+            "extra": "mean: 7.707707434113485 msec\nrounds: 129"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_initialization_class[TreeBasedRepresentation-RampedHalfAndHalfInitializer]",
+            "value": 126.65120707469134,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008350222632283651",
+            "extra": "mean: 7.8957005076963815 msec\nrounds: 130"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_initialization_class[SMTTreeBasedRepresentation-SMTGrowInitializer]",
+            "value": 130.6505654759629,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0002177950073291083",
+            "extra": "mean: 7.654004376919287 msec\nrounds: 130"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_initialization_class[GrammaticalEvolutionRepresentation-GenericPopulationInitializer]",
+            "value": 89.44775101638503,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00023404601818511776",
+            "extra": "mean: 11.179710933333808 msec\nrounds: 90"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_initialization_class[StructuredGrammaticalEvolutionRepresentation-GenericPopulationInitializer]",
+            "value": 10.253180891613217,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0011322462556863718",
+            "extra": "mean: 97.53070881817455 msec\nrounds: 11"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_initialization_class[DynamicStructuredGrammaticalEvolutionRepresentation-GenericPopulationInitializer]",
+            "value": 17.883388237404223,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0005621088924929241",
+            "extra": "mean: 55.91781527778039 msec\nrounds: 18"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_initialization_class[StackBasedGGGPRepresentation-GenericPopulationInitializer]",
+            "value": 22.517612130737785,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00392963383201407",
+            "extra": "mean: 44.409682260888786 msec\nrounds: 23"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_mutation[TreeBasedRepresentation-DefaultTBMutation]",
+            "value": 1.1091948434227643,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0020147128923806777",
+            "extra": "mean: 901.5548583999816 msec\nrounds: 5"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_mutation[SMTTreeBasedRepresentation-DefaultSMTTBMutation]",
+            "value": 1.1126628465414523,
+            "unit": "iter/sec",
+            "range": "stddev: 0.003292797411072181",
+            "extra": "mean: 898.7448471999869 msec\nrounds: 5"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_mutation[GrammaticalEvolutionRepresentation-DefaultGEMutation]",
+            "value": 0.7563589125738437,
+            "unit": "iter/sec",
+            "range": "stddev: 0.01620093993020292",
+            "extra": "mean: 1.3221236417999762 sec\nrounds: 5"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_mutation[StructuredGrammaticalEvolutionRepresentation-DefaultSGEMutation]",
+            "value": 0.11128896189972567,
+            "unit": "iter/sec",
+            "range": "stddev: 0.18663009558530344",
+            "extra": "mean: 8.985617108200064 sec\nrounds: 5"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_mutation[DynamicStructuredGrammaticalEvolutionRepresentation-DefaultDSGEMutation]",
+            "value": 0.37767914409294007,
+            "unit": "iter/sec",
+            "range": "stddev: 0.007787515739625623",
+            "extra": "mean: 2.6477501223999753 sec\nrounds: 5"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_mutation[StackBasedGGGPRepresentation-DefaultGEMutation]",
+            "value": 0.10207616407932066,
+            "unit": "iter/sec",
+            "range": "stddev: 0.13036149352915688",
+            "extra": "mean: 9.796606377399986 sec\nrounds: 5"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_crossover[TreeBasedRepresentation-DefaultTBCrossover]",
+            "value": 8.116702072264596,
+            "unit": "iter/sec",
+            "range": "stddev: 0.008028305720637622",
+            "extra": "mean: 123.20274799996393 msec\nrounds: 9"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_crossover[SMTTreeBasedRepresentation-DefaultSMTTBCrossover]",
+            "value": 7.959575685279312,
+            "unit": "iter/sec",
+            "range": "stddev: 0.008926683568920022",
+            "extra": "mean: 125.63483777777643 msec\nrounds: 9"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_crossover[GrammaticalEvolutionRepresentation-DefaultGECrossover]",
+            "value": 1.5755974566687883,
+            "unit": "iter/sec",
+            "range": "stddev: 0.10927892483393951",
+            "extra": "mean: 634.6798769999623 msec\nrounds: 5"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_crossover[StructuredGrammaticalEvolutionRepresentation-DefaultSGECrossover]",
+            "value": 0.1953539136484781,
+            "unit": "iter/sec",
+            "range": "stddev: 0.12159893072131295",
+            "extra": "mean: 5.118914596200057 sec\nrounds: 5"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_crossover[DynamicStructuredGrammaticalEvolutionRepresentation-DefaultDSGECrossover]",
+            "value": 1.5092256704413298,
+            "unit": "iter/sec",
+            "range": "stddev: 0.04256718668205163",
+            "extra": "mean: 662.591433200032 msec\nrounds: 5"
+          },
+          {
+            "name": "tests/gp/performance_test.py::test_bench_crossover[StackBasedGGGPRepresentation-DefaultGECrossover]",
+            "value": 0.04106350714297395,
+            "unit": "iter/sec",
+            "range": "stddev: 17.19191274671208",
+            "extra": "mean: 24.352522947400075 sec\nrounds: 5"
           }
         ]
       }
